@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 user-scalable=yes"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Reach SP</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Reach SP</h1>
+
+				<div class="scoreContainer">
+					<div class="scoreBox">
+						<p class="scoreText">Score</p>
+						<p class="scoreNumber" id="currentScore">0</p>
+					</div>
+					<div class="scoreBox">
+						<p class="scoreText">High Score</p>
+						<p class="scoreNumber" id="highScore">0</p>
+					</div>
+				</div>
+			</header>
+			<div style="display: none">
+				<img src="images/2.png" alt="" />
+				<img src="images/1024.png" alt="" />
+				<img src="images/128.png" alt="" />
+				<img src="images/16.png" alt="" />
+				<img src="images/2048.png" alt="" />
+				<img src="images/256.png" alt="" />
+				<img src="images/32.png" alt="" />
+				<img src="images/4.png" alt="" />
+				<img src="images/512.png" alt="" />
+				<img src="images/64.png" alt="" />
+				<img src="images/8.png" alt="" />
+			</div>
+			<div>
+				<div class="outerGrid">
+					<div class="grid">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+
+					<div id="gameOver">
+						<div id="gameOverInner">
+							<div><h1>Game Over!</h1></div>
+
+							<div class="scoreBox">
+								<p class="scoreText">Score</p>
+								<p class="scoreNumber">0</p>
+							</div>
+
+							<div>
+								<button id="tryAgain">Play Again</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="howToPlay">
+				<h3>HOW TO PLAY</h3>
+				Use your arrow keys (or swipe if on a phone) to move the tiles. Tiles with
+				the same image merge into one when they touch. Add them up to reach 2048!
+			</div>
+		</main>
+		<script src="js/tile.js"></script>
+		<script src="js/matrix.js"></script>
+		<script src="js/mapping.js"></script>
+		<!-- <script src="dist/main.js"></script>
+         -->
+		<script src="js/index.js"></script>
+	</body>
+</html>
